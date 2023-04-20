@@ -20,7 +20,15 @@ public class MatrixSort {
         System.out.println("Sorted in descending row order:");
         printMatrix(matrix);
         System.out.println("Time taken: " + (endTime - startTime) + " nanoseconds");
-      
+        
+        // Sort in reverse row order
+        startTime = System.nanoTime();
+        Collections.reverse(Arrays.asList(matrix));
+        endTime = System.nanoTime();
+        System.out.println("Sorted in reverse row order:");
+        printMatrix(matrix);
+        System.out.println("Time taken: " + (endTime - startTime) + " nanoseconds");
+        
     }
 
     public static void printMatrix(int[][] matrix) {
